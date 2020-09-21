@@ -68,7 +68,7 @@
 <td class="table-question-{{ question }}-harm">
   {% for level in (1..4) %}{%
     assign harmString = questionNumber | append: "-hint-a" | append: level %}{%
-    assign harmString = page.questions[harmString] | remove_first: "• " | replace: " • ", "</li><li>" | prepend: "<ul><li>" | append: "</li></ul>" }}
+    assign harmString = page.questions[harmString]
   %}<div id="table-question-{{ question }}-harm-{{ level }}" class="hidden">{{ harmString }}</div>{%
   endfor %}
   <div id="table-question-{{ question }}-harm-NA" class="hidden"></div>

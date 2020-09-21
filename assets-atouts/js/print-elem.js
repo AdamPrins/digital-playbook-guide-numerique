@@ -1,10 +1,9 @@
-/*eslint no-unused-vars: ["error", { "vars": "local" }]*/
-/*global PrintElem*/
 /**
  * @title Print Element
  * @overview Takes a HTML element, opens it in a new window, and calls print on that window
  */
-PrintElem = function (elem, title, offset)
+// eslint-disable-next-line
+function PrintElem(elem, title, offset)
 {
   // Title constructor
   title = title || $('title').text();
@@ -98,4 +97,4 @@ PrintElem = function (elem, title, offset)
           });
       });
   });
-};
+}

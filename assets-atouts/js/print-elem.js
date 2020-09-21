@@ -1,9 +1,10 @@
+/*eslint no-unused-vars: ["error", { "vars": "local" }]*/
+/*global PrintElem*/
 /**
  * @title Print Element
  * @overview Takes a HTML element, opens it in a new window, and calls print on that window
  */
- /*global PrintElem */
-function PrintElem(elem, title, offset)
+var PrintElem = function (elem, title, offset)
 {
   // Title constructor
   title = title || $('title').text();
@@ -97,4 +98,4 @@ function PrintElem(elem, title, offset)
           });
       });
   });
-}
+};
